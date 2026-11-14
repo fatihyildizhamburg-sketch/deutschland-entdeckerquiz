@@ -1,0 +1,21 @@
+DEUTSCHLAND-ENTDECKERQUIZ – HANDY-WEB-APP
+
+INHALT
+- index.html: Quiz mit großen Handy-Schaltflächen
+- manifest.webmanifest: App-Name und Darstellung
+- service-worker.js: Nutzung ohne Internet nach erstem Besuch
+- icon-192.png / icon-512.png: App-Symbole
+
+SO WIRD DIE WEB-APP INSTALLIERBAR
+1. Alle fünf Dateien gemeinsam in ein öffentlich erreichbares Verzeichnis auf einer HTTPS-Webseite hochladen (z. B. über einen Webhoster oder GitHub Pages).
+2. Die HTTPS-Adresse von index.html auf dem Handy öffnen.
+3. Android/Chrome: Browsermenü → „App installieren“ oder „Zum Startbildschirm hinzufügen“.
+   iPhone/Safari: Teilen → „Zum Home-Bildschirm“.
+4. Nach dem ersten Laden läuft die App in der Regel auch offline.
+
+WICHTIG
+Die Datei index.html kann auch ohne Hosting direkt geöffnet und gespielt werden. Eine
+installierbare App mit eigenem Symbol und Offline-Cache benötigt jedoch HTTPS.
+Der Punktestand wird lokal auf dem jeweiligen Gerät/im Browser gespeichert. Bei
+Browserdaten-Löschung kann er verloren gehen; dafür „Spielstand sichern“ nutzen.
+Der Spielstand wird nicht automatisch zwischen Geräten synchronisiert.
